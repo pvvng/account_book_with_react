@@ -1,0 +1,104 @@
+.container {
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.btn {
+  width: 100px;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  text-align: center;
+}
+
+.btn-danger {
+  background-color: rgb(249, 73, 73);
+}
+
+.btn-primary {
+  background-color: rgb(66, 66, 255);
+}
+
+.btn-secondary {
+  background-color: rgb(103, 102, 102);
+}
+
+.red-badge {
+  background-color: rgb(249, 73, 73);
+  border-radius: 20px;
+  width: 60px;
+  padding: 6px;
+  text-align: center;
+  color: white;
+}
+
+.blue-badge {
+  background-color: rgb(100, 100, 255);
+  border-radius: 20px;
+  width: 60px;
+  padding: 6px;
+  text-align: center;
+  color: white;
+}
+
+.grey-badge {
+  background-color: rgb(103, 102, 102);
+  border-radius: 20px;
+  width: 60px;
+  padding: 6px;
+  text-align: center;
+  color: white;
+}
+
+.row {
+  display: flex;
+  justify-items: center;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-10 {
+  width: 83.4%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-4 {
+  width: 33.3%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-2 {
+  width: 16.6%;
+}
+
+@media screen and (max-width: 768px) {
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-4 {
+    width: 33.3%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-2 {
+    width: 16.6%;
+  }
+}/*# sourceMappingURL=bootstrap.css.map */

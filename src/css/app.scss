@@ -1,0 +1,482 @@
+@import 'bootstrap.scss';
+
+@font-face {
+  font-family: 'GOSEONGGEUMGANGNURI';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404-2@1.0/GOSEONGGEUMGANGNURI.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+div{
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,p,a,span,hr{
+  margin: 0px;
+  transform: rotate(0.04deg);
+  font-weight: lighter;
+}
+
+input[type=date]::-webkit-datetime-edit-text {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type=date]::-webkit-datetime-edit-month-field{
+  -webkit-appearance: none;
+  display: none;
+
+}
+input[type=date]::-webkit-datetime-edit-day-field {
+  -webkit-appearance: none;
+  display: none;
+}
+input[type=date]::-webkit-datetime-edit-year-field {
+  -webkit-appearance: none;
+  display: none;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator{
+  margin: 0px;
+  padding-left: 1000px;
+}
+
+input[type="date"]:not(.has-value):before{
+  content: attr(placeholder);
+  position: absolute;
+}
+
+body {
+  overflow-x: scroll;
+  font-size: 1rem;
+}
+
+body::-webkit-scrollbar {
+  width: 0.001px; 
+  height: 0px; 
+}
+
+.app{
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+  // transform: scale(1.5);
+}
+
+.landing-page{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(249, 73, 73);
+  padding:10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-page-item{
+  color: white;
+  margin-bottom: 120px;
+  font-family: 'GOSEONGGEUMGANGNURI';
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.op1{
+    opacity: 0;
+}
+
+.op2{
+    opacity: 1;
+    transition: all 1s;
+}
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.under-navbar{
+  width: 100%;
+  padding: 20px;
+  color: white;
+  background-color: rgb(249, 73, 73);
+  position: fixed;
+  bottom: 0;
+  font-size: 3.5rem;
+  z-index:10;
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.hide{
+  display: none;
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.plus-menu{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    z-index: 5;
+    transform: translateY(-100vh);
+    transition: all 1s;
+}
+
+.move-plus-menu{
+    transform: translateY(0vh);
+}
+
+.menuBtnGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+}
+
+.menu-btn{
+    background-color: #eee;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding:5px
+}
+
+.minusBtn{
+  background-color: white;
+  border: 1px solid rgb(249, 73, 73);
+  border-radius: 10px;
+  padding:5px;
+  color: rgb(249, 73, 73);
+}
+
+.plusBtn{
+  background-color: white;
+  border: 1px solid rgb(66, 66, 255);
+  border-radius: 10px;
+  padding:5px;
+  color: rgb(66, 66, 255);
+}
+
+.menu-input{
+    width: 80%;
+    height: 30px;
+    margin: 20px;
+    border:none;
+    border-bottom: 1px solid #eee
+}
+
+.menu-input:focus{
+    outline:none;
+}
+
+.default-menu{
+    margin-top:100px; 
+    font-size:100px;
+    color:rgb(249, 73, 73);
+}
+
+.default-menu :hover{
+  animation-name: shake;
+  animation-duration: 1s;
+  animation-iteration-count: 3;
+}
+
+@keyframes shake{
+  0%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(-80px);
+    color: black
+  }
+  75%{
+    transform: translateY(0px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.main-navbar1{
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+.main-search-btn{
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 100px;
+  color: white;
+  font-size: 20px;
+  position: fixed;
+  bottom: 180px;
+  right: 20px;
+  z-index: 2;
+  transition: all 1s;
+}
+
+.main-plus-btn{
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 100px;
+  color: white;
+  font-size: 20px;
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  z-index: 2;
+}
+
+.move-main-search-btn{
+  min-width: 300px;
+  width: 50%;
+  text-align: right;
+  border-radius: 10px;
+}
+
+.move-main-search-btn-hidden-input{
+  width: 80%;
+  height: 50%;
+  margin:auto;
+  border: none;
+  background-color: #eee;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+button > .move-main-search-btn-hidden-input:focus{
+  border-radius: 0px;
+  outline:none;
+  background-color: white;
+}
+
+.title{
+  cursor: pointer;
+  font-size: 1.8rem;
+  // font-weight: bold;
+  font-weight: 800;
+}
+
+.title ::selection{
+  background-color: white;
+}
+
+.today-date{
+  font-size: 1rem;
+  color: grey;
+  font-weight: lighter;
+}
+
+.main-content{
+  width: calc(100% );
+  // overflow-y: overlay;
+  background-color: #eee;
+}
+
+
+// !!!!!!!!!!!!!!!!!!!!!!!!
+
+.date-prettier{
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!
+
+.edit-menu-container{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  transform: translateY(100vh);
+  z-index: 5;
+  transition: all 1s
+}
+
+.edit-menu-top{
+  @extend .main-navbar1;
+  background-color: rgb(249, 73, 73);
+  color: white;
+}
+
+.move-edit-menu{
+  transform: translateY((0vh));
+}
+
+.edit-menu-content-conatiner{
+  width: 100%;
+  padding: 60px;
+}
+
+.edit-menu-content{
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.touch-box{
+  width: 100%;
+  position: absolute;
+  // z-index:2;
+}
+
+.edit-menu-btn{
+  @extend .menu-btn;
+  background-color: white;
+  color: black;
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.option-edit-tab-container{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  padding: 80px;
+  position: fixed;
+  z-index: 15;
+}
+
+.option-edit-tab-white-bg{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 30px;
+  text-align: left;
+}
+
+.option-edit-tab-btn{
+  width:100px;
+  padding:10px;
+  border: 1px solid grey;
+  // border-radius: 10px;
+  border-bottom: none;
+  background-color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: all 0.5s;
+}
+
+.option-edit-tab-content{
+  width: 100%;
+  height: 93%;
+  border: 1px solid grey;
+  padding:10px;
+  overflow-y: auto;
+}
+
+.option-edit-tab-btn :hover{
+  background-color: black;
+}
+
+.focused-tab-btn{
+  background-color: orange;
+  font-weight: bold;
+}
+
+.option-input{
+  width: 95%;
+  // border: none;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.option-input:focus{
+  outline: none;
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+.asset-moving-btn-container{
+  width: 100%;
+  height: 40px;
+  padding:0px;
+  background-color: #a5a5a5;
+  border-radius: 10px;
+  // margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.asset-moving-btn{
+  position: absolute;
+  height: 40px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  z-index: 3;
+  border: none;
+  transition: all 0.5s;
+  // opacity: 0.5;
+}
+
+.move-asset-moving-btn1{
+  transform: translateX(50vw);
+}
+
+.move-asset-moving-btn2{
+  transform: translateX(0vw);
+}
+
+.asset-default-btn{
+  height: 100%;
+  border: none;
+  color: white;
+  background-color: #a5a5a5;
+  border-radius: 10px;
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.asset-set-container{
+  @extend .main-navbar1;
+  padding:20px;
+}
+
+.progress-bar{
+  width: 100%;
+  height: 22px;
+  border-radius: 10px;
+  background-color: #d6d6d6;
+}
+
+.progress-bar-inner{
+  width: 70%;
+  //width 를 비워놓고 mixin 활용해서 퍼센티지(width) 조절하기
+  height: 22px;
+  border-radius: 10px;
+  background-color: rgb(100, 100, 255);
+}
+
+.asset-set-btn{
+  width:100px;
+  padding:10px;
+  background-color: #949494;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.hidden-asset-set-black-bg{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 15;
+  padding:70px;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.hidden-asset-set-white-content{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding:20px;
+  overflow-y: auto;
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~

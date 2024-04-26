@@ -1,0 +1,104 @@
+.container{
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+.btn{
+  width:100px;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  text-align: center;
+}
+
+.btn-danger{
+  background-color: rgb(249, 73, 73);
+}
+
+.btn-primary{
+  background-color: rgb(66, 66, 255);
+}
+
+.btn-secondary{
+  background-color: rgb(103, 102, 102);
+}
+
+// !!!!!!!!!!!!!!!!!!
+
+@mixin badge($color){
+  background-color: $color;
+  border-radius: 20px;
+  width: 60px;
+  padding:6px;
+  text-align: center;
+  color: white;
+}
+
+.red-badge{@include badge(rgb(249, 73, 73))}
+.blue-badge{@include badge(rgb(100, 100, 255))}
+.grey-badge{@include badge(rgb(103, 102, 102))}
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!
+
+.row{
+  display: flex;
+  justify-items: center;
+}
+
+@mixin col ($width){
+  width: $width;
+}
+
+.col-12{
+  @include col(100%);
+}
+
+.col-10{
+  @include col(83.4%)
+}
+
+.col-9{
+  @include col(75%);
+}
+
+.col-6{
+  @include col(50%);
+}
+
+.col-4{
+  @include col(33.3%);
+}
+
+.col-3{
+  @include col(25%);
+}
+
+.col-2{
+  @include col(16.6%);
+}
+
+@media screen and (max-width : 768px) {
+  .col-md-12{
+    @include col(100%);
+  }
+
+  .col-md-6{
+    @include col(50%);
+  }
+  
+  .col-md-4{
+    @include col(33.3%);
+  }
+  
+  .col-md-3{
+    @include col(25%);
+  }
+  
+  .col-md-2{
+    @include col(16.6%);
+  }
+}
