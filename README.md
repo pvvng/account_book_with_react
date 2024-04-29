@@ -23,8 +23,8 @@
 
 ### <메인페이지>        
 <div>
-<img src = 'https://github.com/pvvng/hostHousehold/assets/112927193/d6c7598d-c81f-4a70-be46-19122149d961' width='49%', height='400'/>
-<img src = 'https://github.com/pvvng/hostHousehold/assets/112927193/8b1f86b8-ac39-471f-8b35-0368f220731e' width='49%', height='400'/>
+<img src = 'https://github.com/pvvng/hostHousehold/assets/112927193/d6c7598d-c81f-4a70-be46-19122149d961' width='49%'/>
+<img src = 'https://github.com/pvvng/hostHousehold/assets/112927193/8b1f86b8-ac39-471f-8b35-0368f220731e' width='49%'/>
 </div>
 
 #### [초기화면 & 카드 추가 버튼]
@@ -32,8 +32,8 @@
 - 하단 + 버튼을 클릭하면 정보를 입력받는 페이지가 나타납니다. 사용자가 input에 입력한 값을 바탕으로 날짜에 맞는 수입 혹은 지출 카드를 생성합니다.
 
 <div>
-<img src = 'https://github.com/pvvng/hostHousehold/assets/112927193/6eaf0f2f-055c-4176-a939-c5b00f14a52b' width='49%', height='400'/>
-<img src = 'https://github.com/pvvng/hostHousehold/assets/112927193/ecb5a277-9bd1-4786-9fd4-14a11926f145' width='49%', height='400'/>
+<img src = 'https://github.com/pvvng/hostHousehold/assets/112927193/6eaf0f2f-055c-4176-a939-c5b00f14a52b' width='49%',/>
+<img src = 'https://github.com/pvvng/hostHousehold/assets/112927193/ecb5a277-9bd1-4786-9fd4-14a11926f145' width='49%'/>
 </div>
 
 #### [월 별 캐러셀 & 옵션 수정 및 삭제]
@@ -41,8 +41,8 @@
 - select의 옵션 수정 및 삭제가 가능합니다. 옵션 값을 받는 input 태그가 비어있으면 옵션을 삭제합니다.
 
 <div>
-<img src = 'https://github.com/pvvng/hostHousehold/assets/112927193/1399334c-e206-4fbb-9ed6-1715ca2de4cc' width='49%', height='400'/>
-<img src = 'https://github.com/pvvng/hostHousehold/assets/112927193/669b35bd-a0d4-421c-9a1c-e19371eb30fc' width='49%', height='400'/>
+<img src = 'https://github.com/pvvng/hostHousehold/assets/112927193/1399334c-e206-4fbb-9ed6-1715ca2de4cc' width='49%'/>
+<img src = 'https://github.com/pvvng/hostHousehold/assets/112927193/669b35bd-a0d4-421c-9a1c-e19371eb30fc' width='49%'/>
 </div>
 
 #### [수입/지출 navbar & 날짜별 카드 생성 & 카드 삭제 기능]
@@ -50,7 +50,7 @@
 - 카드를 터치해서 원하는 카드를 삭제할 수 있습니다.
 
 <div align = 'center'>
-<img src = 'https://github.com/pvvng/hostHousehold/assets/112927193/5da80e31-4fa4-4ffd-bb62-44a0af8904c1' width='49%', height='400'/>
+<img src = 'https://github.com/pvvng/hostHousehold/assets/112927193/5da80e31-4fa4-4ffd-bb62-44a0af8904c1' width='49%'/>
 </div>
 
 #### [검색 버튼]
@@ -61,7 +61,7 @@
 ### <통계 페이지>
 
 <div align = 'center'>
-<img src = 'https://github.com/pvvng/hostHousehold/assets/112927193/077c00d5-d194-477b-8d86-3ab58c09bbe8' width='49%', height='400'/>
+<img src = 'https://github.com/pvvng/hostHousehold/assets/112927193/077c00d5-d194-477b-8d86-3ab58c09bbe8' width='49%'/>
 </div>
 
 #### [통계 그래프]
@@ -72,8 +72,8 @@
 ### <예산/자산 페이지>
 
 <div>
-<img src = 'https://github.com/pvvng/hostHousehold/assets/112927193/d949cc60-8aa4-46f8-bc67-ddee1d009b3f' width='49%', height='400'/>
-<img src = 'https://github.com/pvvng/hostHousehold/assets/112927193/83b24cdf-21fc-42a6-ba4e-f1a60e2a13fd' width='49%', height='400'/>
+<img src = 'https://github.com/pvvng/hostHousehold/assets/112927193/d949cc60-8aa4-46f8-bc67-ddee1d009b3f' width='49%'/>
+<img src = 'https://github.com/pvvng/hostHousehold/assets/112927193/83b24cdf-21fc-42a6-ba4e-f1a60e2a13fd' width='49%''/>
 </div>
 
 #### [예산 설정 & 현재 자산]
